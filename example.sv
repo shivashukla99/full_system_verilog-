@@ -12,3 +12,5 @@ $display("the value of a is %b",a);
 end
 
 endmodule
+
+//this is a dummy comment 
