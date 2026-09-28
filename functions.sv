@@ -10,8 +10,7 @@ module add;
     begin
       
       result =add_two_num(2 ,4);
-      $display("the result will be %d", result);
-                 
+      $display("the result will be %d", result); //the result will be           6                 
       
     end
 endmodule
