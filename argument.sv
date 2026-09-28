@@ -17,3 +17,24 @@ module add;
 endmodule
 
 //In verilog the output argument will not present in it 
+
+//Void function in system verilog 
+module add;
+  
+  int result ;
+
+  function void display();
+     $display("hello");
+     
+  endfunction 
+   
+  initial
+    begin
+      
+     // add_two_num(2 ,4,result);
+      //$display("the result will be %d", result);
+        display();
+                 
+      
+    end
+endmodule
