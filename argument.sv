@@ -38,3 +38,37 @@ module add;
       
     end
 endmodule
+
+///for return keyword 
+module add;
+  
+  int result ;
+  
+  function int add_two_num(input int a,input int b ,  output int c);
+    c = a+b;
+  endfunction
+  
+  function void display();
+    $display("calling before return keyword");
+   return;
+    $display("calling after return keyword");
+     $display("hello");
+     
+  endfunction 
+  
+  
+  initial
+    begin
+      
+      add_two_num(2 ,4,result);
+      $display("the result will be %d", result);
+        display();
+                 
+      
+    end
+endmodule
+
+
+
+//the result will be           6
+//# KERNEL: calling before return keyword
