@@ -72,3 +72,52 @@ endmodule
 
 //the result will be           6
 //# KERNEL: calling before return keyword
+
+
+
+//example 
+
+
+module adder;
+  int result;
+  int second_result;
+  
+  
+  function int adder(input int a, input int b, output int c );
+    c= a+b;
+  endfunction 
+  
+  initial 
+    begin 
+      adder(2,3,result);
+      
+      $display(" the adder value will be %d", result);
+    end 
+  
+  function int c_adder (input int result , input int d , output e);
+    e = result + d ;
+  endfunction
+  
+    initial 
+    begin 
+      adder(result,2,second_result);
+      
+      $display(" the c_adder value will be %d", second_result);
+    end 
+  
+    
+endmodule
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
