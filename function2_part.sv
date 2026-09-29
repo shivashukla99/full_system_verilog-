@@ -171,3 +171,23 @@ endmodule
 // # KERNEL: first :the value of a is           2
 // # KERNEL: first :the value of a is           2
 
+
+///You can call one function using other function 
+module example;
+  
+  function void display1();
+    display2();
+  endfunction
+  
+  function void display2();
+    $display("display 2 ");
+  endfunction
+  
+  initial 
+    begin
+      display1();
+    end 
+endmodule
+
+//output
+// # KERNEL: display 2
