@@ -136,5 +136,38 @@ endmodule
 // # KERNEL: function calling for 2nd time  :the value of a is           2
 
 
+/////---------default string ---//
+module example;
+   int a,b;
+  
+  function  automatic void incr(string  s ="first");
+   
+     a++;
+    b++;
+    
+    
+   
+    $display("%s :the value of a is %d", s,a);
+    $display("%s :the value of a is %d", s,a);
+    
+  endfunction 
+  
+  initial 
+    begin 
+      
+      incr();
+      incr();
+      
+//       incr("function calling for 1st time "); //function calling for 1st time 
+//       incr("function calling for 2nd time "); //function calling for 2nd time 
+  
+    end 
+  
+endmodule 
 
+//output
+// # KERNEL: first :the value of a is           1
+// # KERNEL: first :the value of a is           1
+// # KERNEL: first :the value of a is           2
+// # KERNEL: first :the value of a is           2
 
