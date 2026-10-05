@@ -1,6 +1,7 @@
 module tb_enum;
 
 // "e_true_false" is new data type with two valid  values "TRUE " and "FALSE"
+    //this is a dummy commenet 
 
     enum{TRUE, FALSE} e_true_false;
 
