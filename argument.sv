@@ -104,7 +104,7 @@ module adder;
       
       $display(" the c_adder value will be %d", second_result);
     end 
-  
+  //this is dummy comment 
     
 endmodule
   
