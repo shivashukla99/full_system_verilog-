@@ -1,5 +1,4 @@
-// this is
-//this is a dummy comment 
+//these are the built in function and tasks
 
 
 num();
