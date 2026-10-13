@@ -1,4 +1,5 @@
-// this is a dummy comment 
+// this is a dummy comment
+// this is a dummy comment  
 
 module example;
   int a,b;
